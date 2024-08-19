@@ -1,0 +1,255 @@
+/* FUENTE INTER */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* MODIFICACIÓN DE VALORES DE RAÍZ (variables y demás) */
+:root {
+    --color-blanco: white;
+    --color-negro: rgba(0 0 0 / 0.5);
+    --color-hover-encriptar: rgba(10 56 113 / 0.85);
+    --color-hover-desencriptar: rgba(203, 219, 255, 0.85);
+    --color-primario: #E5EAF5;
+    --color-secundario: #0A3871;
+    --color-terciario: #495057;
+    --color-cuaternario: #E5E5E5;
+    --fuente-inter: 'Inter', sans-serif
+}
+
+/* SELECTOR UNIVERSAL (todos los elementos de la página) */
+* {
+    /* Box model */
+    padding: 0;
+    margin: 0;
+}
+
+/* CONFIGURACIÓN PREDETERMINADA DEL CUERPO */
+body {
+    /* Fondo */
+    background-color: var(--color-primario);
+    height: 1024px;                     /*Altura*/
+
+    /* Disposición de elementos */
+    display: flex;
+    flex-direction: row;                /*Disposición en fila*/
+    justify-content: center;            /*Justificación de contenido (centrado)*/
+    gap: 80px;                          /* Espacio entre elementos */
+
+    /* Fuente */
+    font-family: var(--fuente-inter);
+}
+
+/* CONTENEDOR DEL LOGO */
+.contenedor {
+    /* Box model*/
+    margin: 40px 40px;                  /*Margen de contenedor*/
+
+    /* Disposición del contenido */
+    display:flex;
+    flex-direction: column;             /*Disposición en columna*/
+    justify-content: flex-start;        /*Justificación de contenido (al inicio)*/
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+    /* Box model */
+    padding: 40px 40px;                 /*Espacio entre contenido y borde de 40px*/
+
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: row;                /*Disposición en fila*/
+    gap: 80px;                          /*Espacio entre elementos hijos de 80px*/
+}
+
+/* CONTENEDOR DE ELEMENTOS DE ENTRADA */
+.contenido__input {
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: column;             /*Disposición en columna*/
+    align-items: left;                  /*Alineación de elementos hacia la izquierda*/
+    justify-content: space-between;     /*Justificación de contenido (espaciado entre elementos)*/
+    gap: 16px;                          /*Espacio entre elementos de 16px*/
+}
+
+/* TEXT AREA */
+.contenido__input__texto {
+    /* Box model */
+    margin-top: 168px;
+
+    /* Disposición del contenido */
+    flex-grow: 1;                       /*Crecimiento del elemento en el espacio restante*/
+    text-align: left;                   /*Alineación de texto a la izquierda*/
+
+    /* Características propias del textarea*/
+    border: none;                       /*Sin borde*/
+    resize: none;                       /*No reescalable*/
+    outline: none;                      /*Sin contorno*/
+    overflow: hidden;                   /*Sin desbordamiento*/
+
+    /* Características del contenedor */
+    background-color: rgba(0 0 0 / 0);
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    font-size: 32px;
+    font-weight: 400;
+    height: auto;                       /*Altura automática*/
+}
+
+/* PLACEHOLDER DEL TEXT AREA */
+.contenido__input__texto::placeholder {
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    font-size: 32px;
+}
+
+/* CONTENEDOR DE ELEMENTOS INFERIORES (aviso y botones) */
+.contenido__input__inferior {
+    /* Box model */
+    margin: 0 0 36px 0;
+    
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: column;             /*Disposición en columna*/
+    gap: 16px;                          /*Espacio entre elementos de 16px*/
+}
+
+/* CONTENEDOR DEL AVISO */
+.contenido__input__aviso {
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: row;                /*Disposición en fila*/
+    align-items: center;                /*Alineación de elementos al centro*/
+    gap: 8px;                           /*Espacio entre elementos de 8px*/
+}
+
+.contenido__input__parrafo {
+    font-size: 12px;
+}
+
+/* BOTONES DE CIFRADO */
+.contenido__input__botones {
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: row;                /*Disposición en fila*/
+    gap: 24px;                          /*Espacio entre elementos de 24px*/
+
+    /* Características del contenedor y sus elementos */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* BOTONES */
+.contenido__input__encriptar, .contenido__input__desencriptar {
+    width: 328px;
+    height: 67px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 24px;
+}
+
+.contenido__input__encriptar {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.contenido__input__encriptar:hover {
+    background-color: var(--color-hover-encriptar);
+}
+
+.contenido__input__desencriptar {
+    background-color: var(--color-cuaternario);
+    color: var(--color-secundario)
+}
+.contenido__input__desencriptar:hover {
+    background-color: var(--color-hover-desencriptar);
+}
+
+
+/* CONTENEDOR DE ELEMENTOS DE SALIDA */
+.contenido__output {
+    /* Box model */
+    height: 944px;
+    width: 400px;
+    
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Características del contenedor */
+    background-color: var(--color-blanco);
+    border-radius: 32px;
+    box-shadow: 0px 15px 40px -25px var(--color-negro);
+}
+
+/* CONTENEDOR DEL CONTENIDO PREDETERMINADO */
+.contenido__output__defaultcontent {
+    /* Box model */
+    box-sizing: content-box;
+    margin: 32px;
+    
+    /* Disposición del contenido */
+    display: flex;
+    flex-direction: column;             /*Disposición en columnas*/
+    align-items: center;                /*Alineación centrada de elementos*/
+    text-align: center;                 /*Alineación centrada de texto*/
+    gap: 32px;                          /*Espacio entre elementos*/
+    
+}
+
+/* SECCIÓN DE ELEMENTOS CON MENSAJE PREDETERMINADO */
+.contenido__output__defaultcontent__notfound {
+    /* Disposición de elementos */
+    display: flex;
+    flex-direction: column;             /*Disposición en columnas*/
+    gap: 16px;                          /*Espacio entre elementos de 16px*/
+}
+
+
+.contenido__output__defaultcontent__notfound__titulo {
+    font-size: 24px;
+}
+
+.contenido__output__defaultcontent__notfound__parrafo {
+    font-size: 16px;
+}
+
+
+.contenido__output__procesado {
+    /* Box model */
+    height: 944px;
+    width: 400px;
+    box-sizing: border-box;
+
+    /* Disposición de elementos */
+    display: none;
+    /*display: flex;*/
+    flex-direction: column;             /*Disposición en columnas*/
+    align-items: center;                /*Alineación centrada de elementos*/
+    justify-content: space-between;     /*Justificación de contenido (espaciado entre elementos)*/
+    gap: 32px;                          /*Espacio entre elementos de 32px*/
+}  
+
+/* TEXTO ENCRIPTADO O DESENCRIPTADO */
+.contenido__output__procesado__texto {
+    /* Box model */
+    height: 781px;
+    margin: 32px 32px 0 32px;
+
+    /* Características del contenedor */
+    color: var(--color-terciario);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* BOTÓN COPIAR */
+.contenido__output__procesado__copiar {
+    /* Box model */
+    width: 336px;
+    height: 67px;
+    margin-bottom: 32px;
+
+    /* Características del contenedor */
+    border: 2px solid var(--color-secundario);
+    border-radius: 24px;
+}
+.contenido__output__procesado__desencriptar:hover {
+    background-color: var(--color-hover-desencriptar);
+}
