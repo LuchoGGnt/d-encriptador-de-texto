@@ -9,7 +9,7 @@
 <body>
     <!-- Contenedor izquierdo -->
     <div class="contenedor">
-        <img src="../assets/Logo.png" alt="Logo de Alura">
+        <img class="contenedor__logo" src="../assets/Logo.png" alt="Logo de Alura">
     </div>
 
     <!-- Contenedor principal -->
@@ -20,34 +20,39 @@
 
             <!-- Área de texto -->
             <textarea class="contenido__input__texto" name="contenido__input__texto" id="contenido__input__texto" placeholder="Ingrese el texto aquí"></textarea>
+            
+            <!-- Elemento que contiene el mensaje informativo y los botones -->
+            <div class="contenido__input__inferior">
 
-            <!-- Aviso -->
-            <section class="contenido__input__aviso">
+                <!-- Aviso -->
+                <section class="contenido__input__aviso">
 
-                <!-- Ícono de exclamación -->
-                <img class="contenido__input__icono" src="../assets/icon.png" alt="Ícono de exclamación para mostrar aviso">
+                    <!-- Ícono de exclamación -->
+                    <img class="contenido__input__icono" src="../assets/icon.png" alt="Ícono de exclamación para mostrar aviso">
 
-                <!-- Párrafo informativo -->
-                <p class="contenido__input__parrafo">
-                    Solo letras minúsculas y sin acentos
-                </p>
+                    <!-- Párrafo informativo -->
+                    <p class="contenido__input__parrafo">
+                        Solo letras minúsculas y sin acentos
+                    </p>
 
-            </section>
+                </section>
 
-            <!-- Botones -->
-            <section class="contenido__input__botones">
+                <!-- Botones -->
+                <section class="contenido__input__botones">
 
-                <!-- Botón Encriptar -->
-                <button class="contenido__input__encriptar">
-                    Encriptar
-                </button>
+                    <!-- Botón Encriptar -->
+                    <button class="contenido__input__encriptar">
+                        Encriptar
+                    </button>
 
-                <!-- Botón Desencriptar -->
-                <button class="contenido__input__desencriptar">
-                    Desencriptar
-                </button>
+                    <!-- Botón Desencriptar -->
+                    <button class="contenido__input__desencriptar">
+                        Desencriptar
+                    </button>
 
-            </section>
+                </section>
+
+            </div>
 
         </div>
 
@@ -81,7 +86,9 @@
             <section class="contenido__output__procesado">
                 
                 <!-- Contenedor del texto encriptado -->
-                <p class="contenido__output__procesado__texto"></p>
+                <p class="contenido__output__procesado__texto">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium rem eveniet nostrum, corrupti doloribus tenetur at repellendus possimus sed ab cupiditate, labore facilis quae porro accusantium incidunt aliquam sint qui?
+                </p>
 
                 <!-- Botón -->
                 <button class="contenido__output__procesado__copiar">
@@ -92,11 +99,6 @@
 
         </div>
     </main>
-
-    <!-- Pie de página con información de desarrollo -->
-    <footer class="footer">
-        <p>Desarrollado por LuchoGGnt</p>
-    </footer>
 
 </body>
 </html>
