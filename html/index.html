@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!-- Contenedor izquierdo -->
+    <div class="contenedor">
+        <img src="../assets/Logo.png" alt="Logo de Alura">
+    </div>
+
+    <!-- Contenedor principal -->
+    <main class="contenido">
+
+        <!-- Contenedor del área de texto, aviso y botones -->
+        <div class="contenido__input">
+
+            <!-- Área de texto -->
+            <textarea class="contenido__input__texto" name="contenido__input__texto" id="contenido__input__texto" placeholder="Ingrese el texto aquí"></textarea>
+
+            <!-- Aviso -->
+            <section class="contenido__input__aviso">
+
+                <!-- Ícono de exclamación -->
+                <img class="contenido__input__icono" src="../assets/icon.png" alt="Ícono de exclamación para mostrar aviso">
+
+                <!-- Párrafo informativo -->
+                <p class="contenido__input__parrafo">
+                    Solo letras minúsculas y sin acentos
+                </p>
+
+            </section>
+
+            <!-- Botones -->
+            <section class="contenido__input__botones">
+
+                <!-- Botón Encriptar -->
+                <button class="contenido__input__encriptar">
+                    Encriptar
+                </button>
+
+                <!-- Botón Desencriptar -->
+                <button class="contenido__input__desencriptar">
+                    Desencriptar
+                </button>
+
+            </section>
+
+        </div>
+
+        <!-- Contenedor del texto encriptado y elementos predeterminados -->
+        <div class="contenido__output">
+
+            <!-- Contenedor de elementos predeterminados -->
+            <section class="contenido__output__defaultcontent">
+
+                <!-- Imagen Muñeco -->
+                <img class="contenido__output__defaultcontent__muñeco" src="../assets/Muñeco.png" alt="Imagen de una chica observando un diamante con una lupa">
+
+                <!-- Contenedor de mensaje informativo sobre contenido no encontrado -->
+                <section class="contenido__output__defaultcontent__notfound">
+                    
+                    <!-- Título del mensaje informativo -->
+                    <h2 class="contenido__output__defaultcontent__notfound__titulo">
+                        Ningún mensaje fue encontrado
+                    </h2>
+
+                    <!-- Párrafo con indicaciones -->
+                    <p class="contenido__output__defaultcontent__notfound__parrafo">
+                        Ingresa el texto que desees encriptar o desencriptar
+                    </p>
+
+                </section>
+
+            </section>
+
+            <!-- Contenedor de elementos procesados -->
+            <section class="contenido__output__procesado">
+                
+                <!-- Contenedor del texto encriptado -->
+                <p class="contenido__output__procesado__texto"></p>
+
+                <!-- Botón -->
+                <button class="contenido__output__procesado__copiar">
+                    Copiar
+                </button>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Pie de página con información de desarrollo -->
+    <footer class="footer">
+        <p>Desarrollado por LuchoGGnt</p>
+    </footer>
+
+</body>
+</html>
