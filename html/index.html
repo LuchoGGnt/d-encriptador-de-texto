@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../js/javascript.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
@@ -41,12 +42,12 @@
                 <section class="contenido__input__botones">
 
                     <!-- Botón Encriptar -->
-                    <button class="contenido__input__encriptar">
+                    <button class="contenido__input__encriptar" onclick="actualizar_parrafo('encriptar')">
                         Encriptar
                     </button>
 
                     <!-- Botón Desencriptar -->
-                    <button class="contenido__input__desencriptar">
+                    <button class="contenido__input__desencriptar" onclick="actualizar_parrafo('desencriptar')">
                         Desencriptar
                     </button>
 
@@ -86,12 +87,10 @@
             <section class="contenido__output__procesado">
                 
                 <!-- Contenedor del texto encriptado -->
-                <p class="contenido__output__procesado__texto">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium rem eveniet nostrum, corrupti doloribus tenetur at repellendus possimus sed ab cupiditate, labore facilis quae porro accusantium incidunt aliquam sint qui?
-                </p>
+                <p class="contenido__output__procesado__texto" id="contenido__output__procesado__texto"></p>
 
                 <!-- Botón -->
-                <button class="contenido__output__procesado__copiar">
+                <button class="contenido__output__procesado__copiar" onclick="copiar_texto()">
                     Copiar
                 </button>
 
