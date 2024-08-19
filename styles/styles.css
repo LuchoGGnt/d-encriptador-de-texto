@@ -250,6 +250,7 @@ main {
     border: 2px solid var(--color-secundario);
     border-radius: 24px;
 }
-.contenido__output__procesado__desencriptar:hover {
+
+.contenido__output__procesado__copiar:hover {
     background-color: var(--color-hover-desencriptar);
 }
